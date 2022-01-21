@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tablaJuego"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner
+        android:drawSelectorOnTop="true"
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="1dp"
+        android:visibility="visible"
+        android:background="@android:color/holo_orange_light"/>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridTabla"
+        android:layout_alignStart="@id/gridTabla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.gridlayout.widget.GridLayout>
+</RelativeLayout>

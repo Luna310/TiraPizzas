@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textoDificultad"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="10dp"
+        android:text="ELIJA DIFICULTAD"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDificultad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:onClick="onClick"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/botonFacil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:scrollbarSize="10dp"
+            android:text="FÁCIL"
+            android:fontFamily="sans-serif-black"
+            android:textColorLink="#880E4F"
+            android:textSize="24sp"
+            android:onClick="marcarDificultad"
+            android:tag="8"/>
+
+        <RadioButton
+            android:id="@+id/botonMedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NORMAL"
+            android:fontFamily="sans-serif-black"
+            android:textColorLink="#880E4F"
+            android:textSize="24sp"
+            android:onClick="marcarDificultad"
+            android:tag="12"/>
+
+        <RadioButton
+            android:id="@+id/botonDificil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIFÍCIL"
+            android:fontFamily="sans-serif-black"
+            android:textColorLink="#880E4F"
+            android:textSize="24sp"
+            android:onClick="marcarDificultad"
+            android:tag="16"/>
+
+        <Button
+            android:id="@+id/buttonVolver"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:backgroundTint="#34EB86"
+            android:onClick="ocultarDialog"
+            android:tag="bd"
+            android:text="VOLVER"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+</LinearLayout>

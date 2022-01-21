@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gana"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:src="@drawable/pizza_gana"
+        />
+
+    <TextView
+        android:id="@+id/textoGana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="HAS GANADO!!" />
+
+    <Button
+        android:id="@+id/botonvolverGanado"
+        android:tag="bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#34EB86"
+        android:text="VOLVER"
+        android:textStyle="bold"
+        android:onClick="ocultarDialog"/>
+</LinearLayout>
